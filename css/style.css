@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+}
+body{
+   height: 100vh;
+   color: white;
+}
+#hero-video{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(3px);
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  padding: 2rem 5.2%;
+  font-size: 2rem;
+  background: rgba(45, 80, 85, 0.6);
+}
+.logo{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.5rem;
+  cursor: default;
+}
+nav{
+  display: flex;
+  padding-right: 1rem;
+  gap: 4rem;
+}
+nav a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  opacity: 1;
+  letter-spacing: 1px;
+}
+.pj, .srv{
+  border: solid white 2px;
+  background-color: rgba(0,0,0,0.3);
+  font-weight: 600;
+  border-radius: 2rem;
+  width: 10rem;
+}
+nav a:hover{
+  cursor: pointer;
+  background: white;
+  color: rgba(0,0,0,0.8);
+  box-shadow: 1px 1px 20px rgba(256,256,256,0.5);
+  transition: all ease-in-out 0.3s;
+}
+#home{
+  width: 56%;
+  height: 85%;
+  display: flex;
+}
+.home-content{
+  display: flex;
+  padding: 5rem;
+  padding-left: 5.5rem;
+  flex-direction: column;
+  h2{
+    margin-top: -1.2rem;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  }
+  h3{
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    padding-top: 0.2rem;
+  }
+  p{
+    width: 38rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: justify;
+  }
+}
+.butc{
+  border-radius: 2rem;
+  height: 2.5rem;
+  background: white;
+}
+.butc a{
+  color: rgba(0,0,0,0.6);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  transition: all ease 0.2s;
+}
+.butc:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 20px rgba(256,256,256,0.3);
+  transition: all ease-in-out 0.3s;
+}
+#image{
+  padding-top:1rem;
+  display: flex;
+  justify-content: space-around;
+}
+#fb{
+  height: 2rem;
+  width: 2rem;
+}
+#ig{
+  height: 2rem;
+  width: 2rem;
+}
+#ld{
+  height: 2rem;
+  width: 2rem;
+}
+#x{
+  height: 2rem;
+  width: 2rem;
+}
+#contact{
+  bottom: 0;
+}
+footer{
+  color: rgba(256,256,256,1);
+  bottom: 0;
+  font-size: 0.8rem;
+  width: 100%;
+  padding: 0.4rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.2); 
+}
