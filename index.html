@@ -8,35 +8,33 @@
     </head>
     
     <body>
-        <header>
+        <div id="video">
             <video id="hero-video" autoplay loop muted>
             <source src="./vid/bg_vid.mp4" type="video/mp4">
             </video>
+        </div>
+        <header>
             <a href="#" class="logo">PORTFOLIO</a>
             <nav class="navbar">
-                <a class="srv">SERVICES</a>
-                <a class="pj">PROJECTS</a>
+                <a href="#skills" class="srv">SKILLS</a>
+                <a href="#projects" class="pj">PROJECTS</a>
+                <a href="#contact" class="ct">CONTACT</a>
+                <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">☰</button>
             </nav>
         </header>
+
         <section id="home" class="home">
+            <div class="profile">
+                <img src="./vid/profile.png" class="profile-pic">
+            </div>
             <div class="home-content">
                 <h2>Hello, I am</h2>
                 <h3>Prajwal Tamang</h3>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    I enjoy transforming abstract ideas into fully functional websites, carefully designing every element to ensure seamless interactions, engaging user experiences, and visually appealing layouts that combine creativity, technology, and performance in every project I take on for clients or personal work.
                     </p>
-                <button class="butc"><a href="#learn">LEARN MORE</a></button>
-                <div id="image">
+                    <a href="#contact" class="butc">LET'S COLLABORATE</a>
+                <div id="image" class="image">
                     <a href="https://facebook.com" target="_blank">
                         <img id="fb" src="https://img.icons8.com/?size=100&id=118490&format=png&color=FFFFFF">
                     </a>
@@ -47,21 +45,96 @@
                         <img id="x" src="https://img.icons8.com/?size=100&id=Hhf9xKoLguKy&format=png&color=FFFFFF">
                     </a>
                     <a href="https://linkedin.com" target="_blank">
-                        <img id="ld" src="https://img.icons8.com/?size=100&id=84888&format=png&color=FFFFFF">
+                        <img id="ld" src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF">
                     </a>
                 </div>
             </div>
         </section>
-        <section id="contact">
-            <div id="con">
-            <h1>CONTACT ME</h1>
-            <form id="form">
-            <input type="text" spellcheck="false" placeholder="ENTER NAME">
-            <input type="email" spellcheck="false" placeholder="ENTER EMAIL">
-            <button class="send">CONTACT</button>
-            </form>
+
+        <section id="skills" class="skills">
+                <p class="skills-h">SKILLS</p>
+                <div class="skills-card">
+                    <div class="card">
+                        <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Logo">
+                        <div class="container">
+                            <h4><b>PYTHON</b></h4>
+                            <p>Python scripting and small project development.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="Logo">
+                        <div class="container">
+                            <h4><b>HTML 5</b></h4>
+                            <p>Structuring responsive web pages with HTML.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="Logo">
+                        <div class="container">
+                            <h4><b>CSS 3</b></h4>
+                            <p>Styling pages with CSS and responsive layouts.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000" alt="Logo">
+                        <div class="container">
+                            <h4><b>JAVA</b></h4>
+                            <p>Java fundamentals and basic OOP applications.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000" alt="Logo">
+                        <div class="container">
+                            <h4><b>MySQL</b></h4>
+                            <p>Basic database management with MySQL.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="Logo">
+                        <div class="container">
+                            <h4><b>JAVASCRIPT</b></h4>
+                            <p>Interactive web features with JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <p class="proj-h">PROJECTS</p>
+            <div id="proj-con" class="proj-con">
+                <div class="proj-card">
+                    <img src="./vid/weather.png" class="weather-pic">
+                    <h4><b>WEATHER DETAILS</b></h4>
+                    <p>Built a real-time weather web app powered by API to show temperature, humidity, pressure, and live sky conditions in a responsive modern card layout.</p>
+                </div>
+                <div class="proj-card">
+                    <img src="./vid/movie.png" class="movie-pic">
+                    <h4><b>MOVIE DETAILS</b></h4>
+                    <p>Built a movie details web app to display ratings, overview, genre, and key information in a structured responsive modern card layout for smooth browsing.</p>
+                </div>
+                <div class="proj-card">
+                    <img src="./vid/portfolio.png" class="portfolio-pic">
+                    <h4><b>PORTFOLIO DESIGN</b></h4>
+                    <p>Built a portfolio UI concept focused on alignment, spacing, hierarchy, and responsive modern card layout as a blueprint for future personal branding builds.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div id="contact-con" class="contact-con">
+                <img src="./vid/contact.png" class="contact-img">
+                <div class="contact-details">
+                <p class="con-h">CONTACT ME</p>
+                <form id="form" class="form">
+                    <input type="text" spellcheck="false" placeholder="ENTER NAME">
+                    <input type="email" spellcheck="false" placeholder="ENTER EMAIL">
+                    <button class="send">SEND</button>
+                </form>
+                </div>
             <div>
         </section>
+
         <center>
             <footer>
                 <div class="fp">
@@ -69,5 +142,7 @@
                 </div>
             </footer>
         </center>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
